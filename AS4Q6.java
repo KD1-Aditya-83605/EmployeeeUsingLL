@@ -77,8 +77,20 @@ public class AS4Q6 {
 
 
                 }
+                break;
                 case 5:
                 {
+                    System.out.println("enter empid to update salary for: ");
+                    int id = scanner.nextInt();
+                    System.out.println("Enter salary to be updated: ");
+                    double salary = scanner.nextDouble();
+
+                    Employee e = new Employee(id);
+                    Employee sal = new Employee(salary);
+
+                    list.updateSalary(e,sal);
+
+
 
                 }
             }
